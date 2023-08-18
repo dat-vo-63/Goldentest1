@@ -12,20 +12,17 @@ import com.example.demo.entity.Item;
 public interface ShoppingCardIService {
 	/**
 	 * Thêm mặt hàng vào giỏ hoặc tăng số lượng lên 1 nếu đã tồn tại
-	 * @param item là mặt hàng cần thêm
-	 * @return mặt hàng đã được thêm vào hoặc cập nhật số lượng
+	
 	 */
 	Item add(long id);
 	/**
 	 * Xóa mặt hàng khỏi giỏ
-	 * @param id mã mặt hàng cần xóa
+	
 	 */
 	void remove(int id);
 	/**
 	 * Thay đổi số lượng lên của mặt hàng trong giỏ
-	 * @param id mã mặt hàng
-	 * @param qty số lượng mới
-	 * @return mặt hàng đã được thay đổi số lượng
+	
 	 */
 	Item update(Integer id, int qty);
 	/**
